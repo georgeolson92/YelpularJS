@@ -1,0 +1,5 @@
+<restaurant-display *ngFor="#currentRestaurant of restaurantList"
+  (click)="restaurantClicked(currentRestaurant)"
+  [class.selected]="currentRestaurant === selectedRestaurant"
+  [restaurant]="currentRestaurant">
+</restaurant-display>
